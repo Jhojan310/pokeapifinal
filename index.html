@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Mejorada - Jhojan Estiven Mera Zapata</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header con nombre del desarrollador -->
+    <header class="developer-header">
+        <div class="developer-info">
+            <p>Desarrollado por: <strong>Jhojan Estiven Mera Zapata</strong></p>
+        </div>
+    </header>
+
+    <!-- Contenedor de búsqueda -->
+    <div class="search-container">
+        <input type="text" id="inputPokemon" placeholder="Escribe el nombre del Pokémon...">
+        <button id="btnBuscar">Buscar</button>
+        <div id="statusMessage" class="message-box"></div>
+    </div>
+
+    <!-- Tarjeta del Pokémon -->
+    <section class="card" id="pokemonCard">
+        <h1 class="titulo" id="cardTitle">Pokédex</h1>
+        <div class="contenedor">
+            <h2 id="result_name" class="pokemon-name"></h2>
+            <div class="pokemon-display">
+                <img class="pokemon-img" src="" id="result_img" alt="Imagen del Pokémon">
+            </div>
+            <div class="pokemon-info">
+                <p><strong>ID:</strong> <span id="pokemonId"></span></p>
+                <p><strong>Peso:</strong> <span id="pokemonWeight"></span> kg</p>
+                <p><strong>Altura:</strong> <span id="pokemonHeight"></span> m</p>
+                <p><strong>Habilidades:</strong> <span id="pokemonAbilities"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con nombre -->
+    <footer class="page-footer">
+        <p>Proyecto de consumo de API Pokémon - Jhojan Estiven Mera Zapata</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
